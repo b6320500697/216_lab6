@@ -17,7 +17,7 @@ int main ()
             if(strcmp(word[k],word[k+1])==1)
             {
                 strcpy(cha,word[k]);
-                strcpy(word[k],cha[k+1]);
+                strcpy(word[k],word[k+1]);
                 strcpy(word[k+1],cha);
             }
         }
