@@ -10,19 +10,25 @@ int main ()
     {
         scanf ("%s",word[i]);
     }
-    for(j=0;j<n-1;j++)
+    for (i=1; i<n; i++)
     {
-        while(k<n-j-1)
+        for (j=0; j<i; j++)
         {
-            if(strcmp(word[k],word[k+1])==1)
-            {
-                strcpy(cha,word[k]);
-                strcpy(word[k],word[k+1]);
-                strcpy(word[k+1],cha);
-            }
-            else
-            {
-                k++;
+             while(1)
+             {
+
+                 if (word[i][k] < word[j][k])
+                 {
+                      strcpy (cha[i],word[j]);
+                      strcpy (word[j],word[i]);
+                      strcpy (word[i],cha[i]);
+                      break;
+                 }
+                 else if (word[i][k] == word[j][k])
+                 {
+                        k++;
+                 }
+                 else break;
             }
         }
     }
