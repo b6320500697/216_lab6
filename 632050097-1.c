@@ -2,7 +2,7 @@
 #include <string.h>
 int main ()
 {
-    int n,i,j,k;
+    int n,i,j,k=0;
     scanf ("%d",&n);
     char word[n][50];
     char cha[50];
@@ -12,13 +12,17 @@ int main ()
     }
     for(j=0;j<n-1;j++)
     {
-        for(k=0;k<n-j-1;k++)
+        while(k<n-j-1)
         {
             if(strcmp(word[k],word[k+1])==1)
             {
                 strcpy(cha,word[k]);
                 strcpy(word[k],word[k+1]);
                 strcpy(word[k+1],cha);
+            }
+            else
+            {
+                k++;
             }
         }
     }
