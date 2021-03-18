@@ -1,8 +1,13 @@
 #include <stdio.h>
+#include <string.h>
 int main ()
 {
-    int n;
-    char cha[26]={'A','B','C','D','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
+    int n,i;
     scanf ("%d",&n);
-    char cha1[n];
+    char word[n][50];
+    char cah[50];
+    for (i=0;i<n;i++)
+    {
+        scanf ("%s",word[i]);
+    }
 }
