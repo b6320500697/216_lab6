@@ -22,4 +22,9 @@ int main ()
             }
         }
     }
+    for (j=0;j<n;j++)
+    {
+        printf ("%s\n",word[j]);
+    }
+    return 0;
 }
