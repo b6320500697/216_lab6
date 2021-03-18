@@ -5,4 +5,10 @@ int main()
     scanf ("%d %d",&n,&a);
     char w;
     int q[n],e[n];
+    for (i=0; i<n; i++)
+    {
+        q[j] = 0;
+        e[j] = 0;
+    }
+
 }
