@@ -10,9 +10,9 @@ int main ()
     {
         scanf ("%s",word[i]);
     }
-    for(j=0;j<n;j++)
+    for(j=0;j<n-1;j++)
     {
-        for(k=0;k<n;k++)
+        for(k=0;k<n-j-1;k++)
         {
             if(strcmp(word[k],word[k+1])==1)
             {
